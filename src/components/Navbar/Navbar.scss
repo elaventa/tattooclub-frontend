@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $page-padding;
+    height: 10vh;
+    .navItems{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+        list-style: none;
+
+        .navItem{
+            color: #2541B2;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.hero{
+    position: relative;
+    .mainTitle{
+        color: #CABF66;
+        font-size: 5rem;
+        line-height: 103.2px;
+        font-weight: 300;
+        letter-spacing: 2rem;
+        font-family: 'Inria Serif';
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 2;
+    }
+
+    .heroSubTitle{
+        position: absolute;
+        bottom: -100px;
+        line-height: 73.2px;
+        letter-spacing: .2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        font-weight: 300;
+        font-size: 3rem;
+        font-family: 'Inria Serif';
+        text-align: center;
+    }
+    .heroGrid{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 30px 1.5fr 1fr;
+        gap: 50px;
+        .leftImg{
+            grid-row: 2/3;
+            height: 100%;
+        }
+        .mainImg{
+            grid-row: 1/4;
+            .image{
+                height: 100%;
+            }
+        }
+        .rightImg{
+            grid-row: 2/3;
+            height: 100%;
+        }
+
+        .social{
+            grid-row: 3/4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 40px;
+            color: #2541B2;
+        }
+
+        .rotateContainer{
+            grid-row: 3/4;
+            grid-column: 3/4;
+            align-self: flex-end;
+            justify-self: center;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+
+            .downArrow{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+}

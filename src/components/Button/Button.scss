@@ -1,0 +1,32 @@
+.btn{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #2541B2;
+    color: #2541B2;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    &:hover{
+        background-color: #2541B2;
+        color: #fff;
+
+        .ellipse{
+            background-color: #fff;
+        }
+    }
+    .ellipse{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #2541B2;
+
+     
+    }
+}

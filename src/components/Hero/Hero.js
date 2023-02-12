@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 const Hero = () => {
   return (
     <section className="section hero">
-      <h1 className="mainTitle">THE TATTOO CLUB</h1>
+      <motion.h1 className="mainTitle">THE TATTOO CLUB</motion.h1>
 
       <div className="heroGrid">
         <div className="leftImg">

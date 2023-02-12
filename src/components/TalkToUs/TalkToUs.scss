@@ -1,0 +1,48 @@
+.talkToUs{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 300px;
+
+    .left{
+        .title{
+            font-size: 5rem;
+            line-height: 6rem;
+            color: #2541B2;
+            font-weight: 400;
+        }
+
+        .content{
+            color: #4D5886;
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        
+        .content{
+            font-size: 2rem;
+            color: #2541B2;
+            font-family: "Inria Sans";
+        }
+        
+        form{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 50px 0;
+            input, textarea{
+                border: none;
+                border-bottom: 1px solid #4D5886;
+                outline: none;
+                color: #2541B2;
+            }
+
+            .btn{
+                align-self: flex-start;
+            }
+
+        }
+    }
+}

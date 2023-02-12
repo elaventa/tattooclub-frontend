@@ -1,0 +1,19 @@
+.discoverTalent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .contentWrapper{
+        width: 500px;
+        .title{
+            font-size: 3rem;
+            color: #2541B2;
+            line-height: 3.5rem;
+        }
+        .content{
+            color: #2541B2;
+            margin-top: 20px;
+        }
+    }
+}

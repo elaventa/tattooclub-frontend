@@ -1,0 +1,50 @@
+.successStories{
+    padding-top: 50px;
+    .headerContent{
+        padding-top: 50px;
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    .join{
+        font-size: 1rem;
+        color: #03B2D4;
+        text-align: center;
+        letter-spacing: .4rem;
+    }
+
+    .title{
+        font-size: 2rem;
+        font-weight: 300;
+        color: #CABF66;
+        text-align: center;
+        span{
+            font-weight: 700;
+        }
+    }
+
+    .content{
+        font-size: 1rem;
+        color: #AA9C77;
+        text-align: center;
+    }
+
+    .storiesImgWrapper{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+
+    }
+
+}
+
+
+.line{
+    border-top: 1px solid #2541B2;
+    width: 80vw;
+    margin: auto;
+}

@@ -84,4 +84,8 @@ html{
 
 .section{
     padding: 150px $page-padding;
+
+    @media(max-width: 1200px){
+        padding: 150px 50px;
+    }
 }

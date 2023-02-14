@@ -17,6 +17,16 @@
         transform: translateX(-50%);
         width: 100%;
         z-index: 2;
+        @media(max-width: 1200px){
+            font-size: 3rem;
+            letter-spacing: 1rem;
+         }
+
+         @media(max-width: 500px){
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            font-weight: 400;
+         }
     }
 
     .heroSubTitle{
@@ -31,15 +41,37 @@
         font-size: 3rem;
         font-family: 'Inria Serif';
         text-align: center;
+
+        @media(max-width: 1200px){
+            bottom: 260px;
+            font-size: 2rem;
+            letter-spacing: .01rem;
+            line-height: 50px;
+            font-weight: 400;
+         }
+
+         @media(max-width: 800px){
+            bottom: 250px;
+            // font-size: 1.5rem;
+            font-weight: 700;
+            width: 80%;
+            text-transform: uppercase;
+         }
     }
     .heroGrid{
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
         grid-template-rows: 30px 1.5fr 1fr;
         gap: 50px;
+        @media(max-width: 1200px){
+            grid-template-columns: 1fr;
+        }
         .leftImg{
             grid-row: 2/3;
             height: 100%;
+            @media(max-width: 1200px){
+               display: none;
+            }
         }
         .mainImg{
             grid-row: 1/4;
@@ -50,6 +82,9 @@
         .rightImg{
             grid-row: 2/3;
             height: 100%;
+            @media(max-width: 1200px){
+                display: none;
+            }
         }
 
         .social{
@@ -60,6 +95,9 @@
             justify-content: flex-end;
             gap: 40px;
             color: #2541B2;
+            @media(max-width: 1200px){
+                display: none;
+            }
         }
 
         .rotateContainer{
@@ -70,7 +108,11 @@
             position: relative;
             width: fit-content;
             height: fit-content;
-
+            @media(max-width: 1200px){
+                grid-column: auto;
+                grid-row: auto;
+                margin-top: 100px;
+             }
             .downArrow{
                 position: absolute;
                 top: 50%;

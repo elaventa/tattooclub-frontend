@@ -1,11 +1,15 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import React from "react"
+import React, { useState } from "react"
 import "./Navbar.scss"
 
 const Navbar = () => {
+  const [clicked, setclicked] = useState(false);
+  const handleClick = () => {
+      setclicked(!clicked);
+  };
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${clicked}`}>
       <div className="logo">
         <StaticImage
           src="../../images/logo.png"
@@ -18,20 +22,28 @@ const Navbar = () => {
         />
       </div>
 
-      <ul className="navItems">
-        <Link to="#">
+      <ul className={`navItems ${clicked}`}>
+        <Link onClick={() => setclicked(false)} to="#">
           <li className="navItem">WORKS</li>
         </Link>
-        <Link to="#">
+        <Link onClick={() => setclicked(false)} to="#">
           <li className="navItem">ARTISTS</li>
         </Link>
-        <Link to="#">
+        <Link onClick={() => setclicked(false)} to="#">
           <li className="navItem">COURSE</li>
         </Link>
-        <Link to="#">
+        <Link onClick={() => setclicked(false)} to="#">
           <li className="navItem">CONTACT</li>
         </Link>
       </ul>
+
+      <div className="mobileNav">
+        <div onClick={handleClick} className={`hamburger ${clicked}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
   )
 }

@@ -7,6 +7,7 @@ import SuccessStories from '../components/SuccessStories/SuccessStories'
 import TalkToUs from '../components/TalkToUs/TalkToUs'
 import "swiper/scss";
 import MasterPieces from '../components/MasterPieces/MasterPieces'
+import Reviews from '../components/Reviews/Reviews'
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
       <DiscoverTalent />
       <TalkToUs />
       <SuccessStories />
+      <Reviews />
   </Layout>
 )
 export const Head = () => <Seo title="Home" />

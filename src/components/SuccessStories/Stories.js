@@ -30,9 +30,7 @@ const Stories = () => {
       </div>
       <Swiper
         spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={swiper => console.log(swiper)}
+        slidesPerView={1}
         className="swiper"
         modules={[Navigation, Pagination]}
         navigation={{

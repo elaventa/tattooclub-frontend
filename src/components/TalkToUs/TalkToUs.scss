@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 300px;
+    @media(max-width: 1000px){
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 
     .left{
         .title{
@@ -9,6 +13,9 @@
             line-height: 6rem;
             color: #2541B2;
             font-weight: 400;
+            @media(max-width: 1000px){
+                font-size: 4rem;
+            }
         }
 
         .content{
@@ -24,6 +31,9 @@
             font-size: 2rem;
             color: #2541B2;
             font-family: "Inria Sans";
+            @media(max-width: 1000px){
+                font-size: 1.5rem;
+            }
         }
         
         form{
@@ -32,6 +42,10 @@
             flex-direction: column;
             gap: 30px;
             margin: 50px 0;
+            @media(max-width: 1000px){
+                width: 100%;
+            }
+
             input, textarea{
                 border: none;
                 border-bottom: 1px solid #4D5886;

@@ -3,6 +3,11 @@
     padding-top: 50px !important;
     padding-bottom: 50px !important;
     margin-bottom: 150px;
+
+    @media(max-width: 1000px){
+        margin-bottom: 0px;
+        padding-top: 10px !important;
+    }
     .mainTitle{
         color: #CABF66;
         font-size: 5rem;
@@ -20,6 +25,7 @@
         @media(max-width: 1200px){
             font-size: 3rem;
             letter-spacing: 1rem;
+            top: -45px;
          }
 
          @media(max-width: 500px){
@@ -51,7 +57,7 @@
          }
 
          @media(max-width: 800px){
-            bottom: 250px;
+            bottom: 150px;
             // font-size: 1.5rem;
             font-weight: 700;
             width: 80%;
@@ -111,7 +117,9 @@
             @media(max-width: 1200px){
                 grid-column: auto;
                 grid-row: auto;
-                margin-top: 100px;
+                margin-top: 70px;
+                width: 100px;
+                height: 100px;
              }
             .downArrow{
                 position: absolute;

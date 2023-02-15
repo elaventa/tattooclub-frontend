@@ -7,7 +7,7 @@ const TalkToUs = () => {
     <section className='section talkToUs'>
         <div className="left">
             <h1 className="title">TALK TO US</h1>
-            <p className="content">We'll get back to you within 24 hours. No ink left un-turned!</p>
+            <p className="content">We'll get back to you within 24 hours. No ink left unturned!</p>
         </div>
 
         <div className="right">

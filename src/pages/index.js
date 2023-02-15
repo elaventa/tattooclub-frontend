@@ -6,10 +6,12 @@ import Seo from "../components/seo"
 import SuccessStories from '../components/SuccessStories/SuccessStories'
 import TalkToUs from '../components/TalkToUs/TalkToUs'
 import "swiper/scss";
+import MasterPieces from '../components/MasterPieces/MasterPieces'
 
 const IndexPage = () => (
   <Layout>
       <Hero />
+      <MasterPieces />
       <DiscoverTalent />
       <TalkToUs />
       <SuccessStories />

@@ -1,0 +1,28 @@
+.masterPieces {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        @media(max-width: 1000px){
+            flex-direction: column;
+            gap: 50px;
+        }
+        .left {
+            .title {
+                font-size: 3rem;
+                color: #5e4b08;
+                line-height: 3.5rem;
+            }
+            .content {
+                color: #5e4b08;
+                margin-top: 20px;
+            }
+        }
+    }
+
+   
+}

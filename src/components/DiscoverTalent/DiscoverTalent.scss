@@ -3,9 +3,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    @media(max-width: 1000px){
+        flex-direction: column;
+        gap: 50px;
+        background-color: #E3E6F5;
+    }
     .contentWrapper{
         width: 500px;
+        @media(max-width: 1000px){
+            width: 100%;
+            margin: auto;
+        }
         .title{
             font-size: 3rem;
             color: #2541B2;

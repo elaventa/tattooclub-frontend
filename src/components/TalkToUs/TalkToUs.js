@@ -4,7 +4,7 @@ import "./TalkToUs.scss"
 
 const TalkToUs = () => {
   return (
-    <section className='section talkToUs'>
+    <section id='talkToUs' className='section talkToUs'>
         <div className="left">
             <h1 className="title">TALK TO US</h1>
             <p className="content">We'll get back to you within 24 hours. No ink left unturned!</p>

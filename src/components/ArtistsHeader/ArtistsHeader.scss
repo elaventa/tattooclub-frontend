@@ -1,0 +1,36 @@
+.artistsHeaderContainer{
+    padding-top: 20px;
+    .header{
+        margin-bottom: 50px;
+        .title{
+            text-align: center;
+            color: #2541B2;
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .content{
+            color: #4D5886;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+      
+    }
+
+    .artistsWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .artistCard{
+            width: 400px;
+
+        }
+
+    }
+}

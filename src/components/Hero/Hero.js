@@ -69,16 +69,18 @@ const Hero = () => {
               className="image"
             />
           </motion.div>
-          <div className="downArrow">
-            <StaticImage
-              src="../../images/down-arrow.png"
-              loading="eager"
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-              alt=""
-              className="image"
-            />
-          </div>
+          <Link to="#talkToUs">
+            <div className="downArrow">
+              <StaticImage
+                src="../../images/down-arrow.png"
+                loading="eager"
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                className="image"
+              />
+            </div>
+          </Link>
         </div>
       </div>
 

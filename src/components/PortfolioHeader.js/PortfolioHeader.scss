@@ -1,0 +1,25 @@
+.portfolioContainer{
+    
+    .header{
+        margin-bottom: 50px;
+        .title{
+            text-align: center;
+            color: #2541B2;
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .categories{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            @media(max-width: 700px){
+                gap: 15px;
+            }
+        }
+    }
+}

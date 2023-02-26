@@ -1,3 +1,8 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -6,6 +11,21 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        watchMode: true,
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
+        showSpinner: true,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {

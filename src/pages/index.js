@@ -8,10 +8,11 @@ import TalkToUs from '../components/TalkToUs/TalkToUs'
 import "swiper/scss";
 import MasterPieces from '../components/MasterPieces/MasterPieces'
 import Reviews from '../components/Reviews/Reviews'
+import HeroNew from '../components/Hero/HeroNew'
 
 const IndexPage = () => (
   <Layout>
-      <Hero />
+      <HeroNew />
       <MasterPieces />
       <DiscoverTalent />
       <TalkToUs />

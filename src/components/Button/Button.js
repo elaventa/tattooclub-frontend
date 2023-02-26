@@ -2,9 +2,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import "./Button.scss"
 
-const Button = ({ content, variant }) => {
+const Button = ({ content, variant, selected, onClick }) => {
   return (
-    <button className={["btn", variant].join(" ")}>
+    <button onClick={onClick} className={["btn", variant, selected].join(" ")}>
 
       <div className="ellipse"></div>
 

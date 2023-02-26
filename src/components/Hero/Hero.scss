@@ -10,6 +10,18 @@
             min-height: 30vh;
 
         }
+
+       .image{
+        width: 100%;
+        object-fit: contain;
+        max-height: 45vh;
+        height: 45vh;
+        @media(max-width: 1200px){
+            max-height: 30vh;
+            min-height: 30vh;
+
+        }
+       }
     }
     .mainTitle {
         color: #cabf66;

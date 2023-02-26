@@ -1,4 +1,4 @@
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Navigation, Pagination } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -6,9 +6,26 @@ import "./Hero.scss"
 import "swiper/css"
 import "swiper/css/pagination"
 import { motion } from "framer-motion"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 
 const HeroNew = () => {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      images: allSanityPoster {
+        edges {
+          node {
+            id
+            mainImage {
+              asset {
+                gatsbyImageData(fit: FILLMAX, placeholder: BLURRED)
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section className="section hero">
       <div className="mainTitle">THE TATTOO CLUB</div>
@@ -22,15 +39,16 @@ const HeroNew = () => {
         className="swiper"
         modules={[Navigation, Pagination]}
       >
-        <SwiperSlide>
-          <StaticImage src="../../images/placeholder.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage src="../../images/placeholder.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <StaticImage src="../../images/placeholder.png" />
-        </SwiperSlide>
+        {data?.images?.edges.map(image => (
+          <SwiperSlide>
+            <GatsbyImage
+              className="image"
+              key={image.node.id}
+              alt=""
+              image={image.node.mainImage.asset.gatsbyImageData}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <h2 className="heroSubTitle">
@@ -38,35 +56,35 @@ const HeroNew = () => {
       </h2>
 
       <div className="rotateContainer">
-          <motion.div
-            className="rotate"
-            animate={{
-              rotate: 360,
-            }}
-            transition={{ ease: "linear", duration: 10, repeat: Infinity }}
-          >
+        <motion.div
+          className="rotate"
+          animate={{
+            rotate: 360,
+          }}
+          transition={{ ease: "linear", duration: 10, repeat: Infinity }}
+        >
+          <StaticImage
+            src="../../images/rotate.png"
+            loading="eager"
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            className="image"
+          />
+        </motion.div>
+        <Link to="#talkToUs">
+          <div className="downArrow">
             <StaticImage
-              src="../../images/rotate.png"
+              src="../../images/down-arrow.png"
               loading="eager"
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""
               className="image"
             />
-          </motion.div>
-          <Link to="#talkToUs">
-            <div className="downArrow">
-              <StaticImage
-                src="../../images/down-arrow.png"
-                loading="eager"
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt=""
-                className="image"
-              />
-            </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
+      </div>
     </section>
   )
 }

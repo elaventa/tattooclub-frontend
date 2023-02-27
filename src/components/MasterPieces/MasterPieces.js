@@ -4,6 +4,7 @@ import "./MasterPieces.scss"
 import Img from "gatsby-image"
 import useGallery from "../../hooks/useGallery"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import { Link } from "gatsby"
 
 const MasterPieces = () => {
   const images = useGallery()
@@ -16,7 +17,7 @@ const MasterPieces = () => {
         </div>
 
         <div className="right">
-          <Button content={"VIEW OUR PORTFOLIO"} />
+          <Link to="/portfolio"><Button content={"VIEW OUR PORTFOLIO"} /></Link>
         </div>
       </div>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 1000: 3 }}>

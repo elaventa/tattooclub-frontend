@@ -65,25 +65,25 @@ const HeroNew = () => {
         >
           <StaticImage
             src="../../images/rotate.png"
-            loading="eager"
-            quality={95}
-            formats={["auto", "webp", "avif"]}
+            loading="blurred"
+            quality={100}
             alt=""
-            className="image"
+            formats={["auto", "webp", "avif"]}
+            className="image-rotate"
           />
         </motion.div>
-        <Link to="#talkToUs">
+        <a href="#talkToUs">
           <div className="downArrow">
             <StaticImage
               src="../../images/down-arrow.png"
-              loading="eager"
-              quality={95}
+              loading="blurred"
+              quality={100}
               formats={["auto", "webp", "avif"]}
               alt=""
               className="image"
             />
           </div>
-        </Link>
+        </a>
       </div>
     </section>
   )

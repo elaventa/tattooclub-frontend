@@ -18,7 +18,7 @@ const DiscoverTalent = () => {
       <div className="image">
         <StaticImage
           src="../../images/talent.png"
-          loading="eager"
+          loading="blurred"
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt=""

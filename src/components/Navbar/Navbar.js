@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link to="/">
           <StaticImage
             src="../../images/logo.png"
-            loading="eager"
+            loading="blurred"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -25,6 +25,9 @@ const Navbar = () => {
       </div>
 
       <ul className={`navItems ${clicked}`}>
+      <Link onClick={() => setclicked(false)} to="/">
+          <li className="navItem">HOME</li>
+        </Link>
         <Link onClick={() => setclicked(false)} to="/portfolio">
           <li className="navItem">WORKS</li>
         </Link>

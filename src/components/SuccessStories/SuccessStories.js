@@ -26,7 +26,7 @@ const SuccessStories = () => {
         <Stories />
         <StaticImage
           src="../../images/story.png"
-          loading="eager"
+          loading="blurred"
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt=""

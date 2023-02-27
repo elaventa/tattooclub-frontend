@@ -22,7 +22,7 @@ const ArtistsHeader = () => {
         <div className="artistCard">
           <StaticImage
             src="../../images/hero-main.png"
-            loading="eager"
+            loading="blurred"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -37,7 +37,7 @@ const ArtistsHeader = () => {
         <div className="artistCard">
           <StaticImage
             src="../../images/hero-main.png"
-            loading="eager"
+            loading="blurred"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
@@ -52,7 +52,7 @@ const ArtistsHeader = () => {
         <div className="artistCard">
           <StaticImage
             src="../../images/hero-main.png"
-            loading="eager"
+            loading="blurred"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""

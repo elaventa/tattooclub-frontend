@@ -2,6 +2,10 @@
     padding-top: 20px;
     position: relative;
 
+    @media(max-width: 800px){
+        padding-top: 5px;
+    }
+
     .swiper{
         max-height: 45vh;
         min-height: 45vh;

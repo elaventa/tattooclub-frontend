@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Button from "../Button/Button"
@@ -25,7 +26,7 @@ const DiscoverTalent = () => {
         />
       </div>
 
-      <Button content={"VIEW OUR ARTIST"} />
+     <Link to="/artists"> <Button content={"VIEW OUR ARTIST"} /></Link>
     </section>
   )
 }

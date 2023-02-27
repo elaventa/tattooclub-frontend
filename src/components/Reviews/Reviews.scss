@@ -1,7 +1,7 @@
 .reviews {
     width: 60vw;
     margin: auto;
- 
+    margin-bottom: 100px;
     @media(max-width: 1350px){
         width: 80vw;
     }
@@ -20,7 +20,6 @@
         font-size: 2rem;
         @media (max-width: 960px) {
             flex-direction: column;
-            // align-items: center;
         }
 
         .title{

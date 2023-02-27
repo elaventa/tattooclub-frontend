@@ -10,7 +10,6 @@ import Navbar from "./Navbar/Navbar"
 import "../styles/global.scss"
 import Footer from "./Footer/Footer"
 import Credits from "./Credits/Credits"
-import { useScrollRestoration } from "gatsby"
 
 const Layout = ({ children }) => {
   return (

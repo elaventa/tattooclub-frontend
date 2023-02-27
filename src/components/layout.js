@@ -9,6 +9,7 @@ import * as React from "react"
 import Navbar from "./Navbar/Navbar"
 import "../styles/global.scss"
 import Footer from "./Footer/Footer"
+import Credits from "./Credits/Credits"
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Credits />
       </div>
     </>
   )

@@ -34,9 +34,9 @@ const Navbar = () => {
         <Link onClick={() => setclicked(false)} to="#">
           <li className="navItem">COURSE</li>
         </Link>
-        <Link onClick={() => setclicked(false)} to="#">
+        <a onClick={() => setclicked(false)} href="#contact">
           <li className="navItem">CONTACT</li>
-        </Link>
+        </a>
       </ul>
 
       <div className="mobileNav">

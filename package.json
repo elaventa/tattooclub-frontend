@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "tattoos-club",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Tattoos club in kochi",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "perple.in",
   "dependencies": {
     "framer-motion": "^9.0.2",
     "gatsby": "^5.6.0",

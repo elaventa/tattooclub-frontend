@@ -1,16 +1,23 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useSwiper } from "swiper/react";
-import {
-    BsArrowLeft,
-    BsArrowRight,
-} from "react-icons/bs";
-import { Navigation, Pagination } from "swiper";
-import stories from "../../data/stories.json";
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { useSwiper } from "swiper/react"
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
+import { Navigation, Pagination } from "swiper"
 import "./Stories.scss"
 
 const Stories = () => {
-    const swiper = useSwiper();
+  const data = useStaticQuery(graphql`
+    query SuccessStoryQuery {
+      stories: allSanitySuccessStories {
+        nodes {
+          story
+          student
+        }
+      }
+    }
+  `)
+  const swiper = useSwiper()
   return (
     <div className="stories">
       <div className="header">
@@ -49,11 +56,11 @@ const Stories = () => {
           },
         }}
       >
-        {stories.map((story, index) => (
+        {data?.stories?.nodes.map((story, index) => (
           <SwiperSlide key={index}>
             <div className="storyWrapper">
               <p className="story">{story.story}</p>
-              <p className="person">-{story.person}</p>
+              <p className="person">-{story.student}</p>
             </div>
           </SwiperSlide>
         ))}

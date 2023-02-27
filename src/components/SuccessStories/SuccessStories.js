@@ -4,6 +4,7 @@ import Stories from "./Stories"
 import "./SuccessStories.scss"
 
 const SuccessStories = () => {
+ 
   return (
     <section className="section successStories">
       <div className="line"></div>
@@ -29,7 +30,6 @@ const SuccessStories = () => {
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt=""
-        
         />
       </div>
 

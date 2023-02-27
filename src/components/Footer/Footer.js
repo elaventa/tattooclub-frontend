@@ -1,10 +1,10 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import styles from "./Footer.scss"
+import "./Footer.scss"
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer id='contact' className='footer'>
         <StaticImage className='image' src='../../images/background.png' />
         <section className='FooterContent'>
             <h2>Let's turn your vision into reality</h2>

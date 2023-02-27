@@ -2,7 +2,7 @@
     background-color: #2541B2;
     position: relative;
     height: 60vh;
-    z-index: -2;
+    z-index: 1;
 
     @media(max-width: 1000px){
         height: auto;
@@ -27,7 +27,7 @@
         justify-content: center;
         height: 100%;
         color: #fff;
-        z-index: 1;
+        z-index: 3;
 
         @media(max-width: 1000px){
             align-items: flex-start;
@@ -36,11 +36,17 @@
 
         h2{
             text-transform: uppercase;
+            @media(max-width: 400px){
+                font-size: 1.3rem;
+            }
         }
         .title{
             text-transform: uppercase;
             font-size: 3rem;
             margin-bottom: 50px;
+            @media(max-width: 400px){
+                font-size: 2.3rem;
+            }
         }
         .row{
             display: flex;

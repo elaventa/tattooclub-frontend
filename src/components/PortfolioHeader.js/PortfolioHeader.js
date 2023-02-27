@@ -26,7 +26,7 @@ const PortfolioHeader = () => {
             }
             mainImage {
               asset {
-                gatsbyImageData(fit: FILLMAX, placeholder: BLURRED, width: 400)
+                gatsbyImageData(fit: FILLMAX, placeholder: BLURRED)
               }
             }
           }

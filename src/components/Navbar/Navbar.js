@@ -19,7 +19,6 @@ const Navbar = () => {
             formats={["auto", "webp", "avif"]}
             alt=""
             className="image"
-            style={{ width: "100%" }}
           />
         </Link>
       </div>

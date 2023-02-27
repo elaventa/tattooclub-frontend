@@ -18,7 +18,7 @@ const Navbar = () => {
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            className="image"
+            className="logo-img"
           />
         </Link>
       </div>

@@ -16,6 +16,15 @@
            background-color: #F5F1E3;
        }
     }
+    .logo{
+
+        @media(max-width: 800px){
+            width: 30px;
+        }
+        .logo-img{
+            width: 100%;
+        }
+    }
     .navItems{
         display: flex;
         flex-direction: row;

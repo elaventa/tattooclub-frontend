@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="logo">
         <Link to="/">
           <StaticImage
-            src="../../images/logo.png"
+            src="../../images/logo-main.png"
             loading="blurred"
             quality={95}
             formats={["auto", "webp", "avif"]}
